@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  images_urls: {
+    header_logo: 'https://maisonvivaldi.s3.us-east-2.amazonaws.com/images/images/LOGO_MV_LINE.svg',
+    intro_img: 'https://maisonvivaldi.s3.us-east-2.amazonaws.com/images/images/printify+copie.png',
+    background_img: 'assets/images/home.jpg'
+  }
 };
 
 /*
