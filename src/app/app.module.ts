@@ -21,6 +21,8 @@ import { FeaturesIdeaComponent } from './components/Pages/home/features-idea/fea
 import { VideoIdeaComponent } from './components/Pages/home/video-idea/video-idea.component';
 import { PreviewProductComponent } from './components/Pages/home/preview-product/preview-product.component';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
+import { CatalogueComponent } from './components/Pages/produit/catalogue/catalogue.component';
+import { StepperComponent } from './components/Pages/produit/stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import {MDBBootstrapModule} from 'angular-bootstrap-md';
     MainIdeaComponent,
     FeaturesIdeaComponent,
     VideoIdeaComponent,
-    PreviewProductComponent
+    PreviewProductComponent,
+    CatalogueComponent,
+    StepperComponent
   ],
   imports: [
     BrowserModule,
