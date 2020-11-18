@@ -1,0 +1,60 @@
+<nav class="navbar is-white has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand pl-4">
+    <a class="navbar-item"
+       [style.background]="'url('+imageLogo+')'+ ' no-repeat center center'"
+       [style.background-size]="'cover'"
+       [style.width]="'110px'"
+       routerLink="/home">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+       data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" routerLink="/ccm">
+        Comment ça marche
+      </a>
+
+      <a class="navbar-item" routerLink="/produit">
+        Produit
+      </a>
+
+      <a class="navbar-item" routerLink="/bel">
+        Boutique en ligne
+      </a>
+
+      <a class="navbar-item" routerLink="/media">
+        Media
+      </a>
+
+      <a class="navbar-item" routerLink="/faq">
+        FAQ
+      </a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <button class="button">
+            <span class="icon">
+              <fa-icon [icon]="faUserCircle"></fa-icon>
+            </span>
+            <span>Compte</span>
+          </button>
+          <button class="button">
+            <span class="icon">
+              <fa-icon [icon]="faShoppingBasket"></fa-icon>
+            </span>
+            <span>Votre Panier - ({{panier}})</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

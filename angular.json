@@ -13,6 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "lodash"
+            ],
             "outputPath": "dist/ProjectTest",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -24,7 +27,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/bulma/css/bulma.css",
               "node_modules/bulma-o-steps/bulma-steps.scss",
               "node_modules/angular-bootstrap-md/assets/scss/mdb.scss",
@@ -96,7 +98,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/bulma/css/bulma.css",
               "node_modules/bulma-o-steps/bulma-steps.scss",
               "node_modules/angular-bootstrap-md/assets/scss/mdb.scss",
